@@ -9,29 +9,20 @@ package tp2_relation_1_muller;
  * @author elois
  */
 public class Voiture {
-    String marque;
-     String modele;
-     int annee;
-     int puissanceCV;
-     Personne proprietaire;
-     
+    String Modele;
+    String Marque;
+    int PuissanceCV;
+    Personne Proprietaire; // pour stocker le propriétaire
 
-    // Constructeur
-
-    public Voiture(String marque, String modele, int annee, int puissanceCV, Personne proprietaire) {
-        this.marque = marque;
-        this.modele = modele;
-        this.annee = annee;
-        this.puissanceCV = puissanceCV;
-        this.proprietaire = proprietaire;
+    public Voiture(String modele, String marque, int puissanceCV) {
+        this.Modele = modele;
+        this.Marque = marque;
+        this.PuissanceCV = puissanceCV;
+        this.Proprietaire = null; // initialisé à null, sans propriétaire
     }
 
-    
-    
-
-    // Méthode toString() pour afficher les informations de la voiture
     @Override
     public String toString() {
-        return "Voiture [Marque: " + marque + ", Modèle: " + modele + ", Année: " + annee + "]";
+        return "Voiture{" + "Modele='" + Modele + '\'' + ", Marque='" + Marque + '\'' + ", PuissanceCV=" + PuissanceCV + '}';
     }
 }
